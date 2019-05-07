@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.sample.cloudvision;
+package gdg.leiria.cloud.vision;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -39,8 +39,6 @@ import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.List;
 import java.util.Locale;
-
-import gdg.leiria.cloud.vision.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -160,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
             AsyncTask<Object, Void, String> labelDetectionTask = new LableDetectionTask(this, CloudVisionAPI.prepareAnnotationRequest(bitmap, this));
             labelDetectionTask.execute();
         } catch (IOException e) {
-            Toast.makeText(this, "Ocorreu um erro a analisar a imagem", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.image_analyse_error), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -184,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                 return convertResponseToString(response);
 
             } catch (IOException e) {
-                Log.d(TAG, "Não possivel comunicar com a API porque: " + e.getMessage());
+                Log.d(TAG, "Não foi possivel comunicar com a API porque: " + e.getMessage());
             }
             return "Ocorreu um erro, consulte os logs para mais detalhes";
         }

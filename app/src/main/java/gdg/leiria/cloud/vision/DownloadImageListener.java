@@ -1,4 +1,4 @@
-package com.google.sample.cloudvision;
+package gdg.leiria.cloud.vision;
 
 import android.graphics.Bitmap;
 

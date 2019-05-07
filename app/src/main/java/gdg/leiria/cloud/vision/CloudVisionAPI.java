@@ -1,4 +1,4 @@
-package com.google.sample.cloudvision;
+package gdg.leiria.cloud.vision;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -24,7 +24,7 @@ class CloudVisionAPI {
 
     private static final String ANDROID_CERT_HEADER = "X-Android-Cert";
     private static final String ANDROID_PACKAGE_HEADER = "X-Android-Package";
-    private static final String CLOUD_VISION_API_KEY = "AIzaSyCjfTpqNElHSrzM766r6hx2n_PFnnqyEe8";
+    private static final String CLOUD_VISION_API_KEY = "<API Key>";
 
     private static final int MAX_LABEL_RESULTS = 10;
 

@@ -16,4 +16,5 @@
     <string name="found_classes">Foram encontradas as seguintes classes:</string>
     <string name="nothing">nothing</string>
     <string name="valid_url">Introduza um URL válido</string>
+    <string name="image_analyse_error">Ocorreu um erro a analisar a imagem</string>
 </resources>

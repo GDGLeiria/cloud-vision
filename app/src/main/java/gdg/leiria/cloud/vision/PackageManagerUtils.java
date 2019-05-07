@@ -1,4 +1,4 @@
-package com.google.sample.cloudvision;
+package gdg.leiria.cloud.vision;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
